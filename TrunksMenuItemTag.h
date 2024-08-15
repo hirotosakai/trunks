@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2005-2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -29,4 +29,8 @@
 
 #define TRMenuOpenAppleGlotEnv		400
 #define TRMenuLaunchAppleGlot		410
-#define TRMenuRunIncrementalPass	420
+#define TRMenuRunInitialPass        420
+#define TRMenuRunIncrementalPass	430
+#define TRMenuRunFinalPass          440
+
+#define TRMenuShowAppleGlotConsole  500

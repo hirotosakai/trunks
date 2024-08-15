@@ -25,32 +25,28 @@
 
 static PrefsController *sharedController = nil;
 
-@interface PrefsController(Private)
-- (id)initWithWindowNib;
-@end
-
 @implementation PrefsController
 
 + (id)sharedPreferenceController
 {
     if (!sharedController) {
-        sharedController = [[PrefsController allocWithZone:NULL] initWithWindowNib];
+        sharedController = [[PrefsController alloc] init];
     }
 
     return sharedController;
 }
 
-- (id)initWithWindowNib
+- (id)init
 {
-    self = [super initWithWindowNibName:@"Preferences"];
+    if (self = [super initWithWindowNibName:@"Preferences"]) {
+    }
+    
     return self;
 }
 
 - (void)windowDidLoad
 {
 	[[self window] center];
-    // initialize GUI from pref...
-    [txtAppleGlotEnvPath setStringValue:[TrunksPrefs appleGlotEnvPath]];
 }
 
 - (void)windowWillClose:(NSNotification *)aNotification
@@ -71,8 +67,8 @@ static PrefsController *sharedController = nil;
     rc = [panel runModalForDirectory:nil file:nil types:nil];
     if (rc == NSOKButton) {
         path = [[panel filenames] objectAtIndex:0];
-        [txtAppleGlotEnvPath setStringValue:path];
-        [TrunksPrefs setAppleGlotEnvPath:path];
+        id values = [prefsController values];
+        [values setValue:path forKey:@"AppleGlotEnvPath"];
     }
 }
 

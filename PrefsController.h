@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2005-2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -22,11 +22,10 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "TrunksPrefs.h"
 
 @interface PrefsController : NSWindowController
 {
-    IBOutlet id txtAppleGlotEnvPath;
+    IBOutlet NSUserDefaultsController *prefsController;
 }
 
 + (id)sharedPreferenceController;

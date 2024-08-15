@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2005-2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -60,7 +60,18 @@
 
 - (IBAction)translateWithGlossary:(id)sender
 {
-    [[NSOpenPanel openPanel] beginSheetForDirectory:[TrunksPrefs appleGlotEnvPath]
+    // initialize controls in custom view
+    [chkReplaceApp setState:NSOffState];
+    [txtAppFrom setEditable:NO];
+    [txtAppTo setEditable:NO];
+    [txtAppFrom setStringValue:@""];
+    [txtAppTo setStringValue:@""];
+
+    // attach custom view and show file open dialog
+    NSString *path = [[NSUserDefaults standardUserDefaults] stringForKey:@"AppleGlotEnvPath"];
+    NSOpenPanel *op = [NSOpenPanel openPanel];
+    [op setAccessoryView:replaceAppView];
+    [op beginSheetForDirectory:path
             file:nil
             types:[NSArray arrayWithObjects:@"wg", @"ad", @"lg", nil]
             modalForWindow:[NSApp mainWindow]
@@ -74,9 +85,24 @@
     MyDocument *doc = [self document];
     
     if (returnCode == NSFileHandlingPanelOKButton) { // OK clicked
-        [doc translateAllWithGlossary:[sheet filename]];
+        if ([chkReplaceApp state] == NSOnState) {
+            [doc translateAllWithGlossary:[sheet filename] replace:YES from:[txtAppFrom stringValue] to:[txtAppTo stringValue]];
+        } else {
+            [doc translateAllWithGlossary:[sheet filename] replace:NO from:nil to:nil];
+        }
         [self clearTextFields];
         [self resetTableView];
+    }
+}
+
+- (IBAction)replaceAppChanged:(id)sender
+{
+    if ([chkReplaceApp state] == NSOnState) {
+        [txtAppFrom setEditable:YES];
+        [txtAppTo setEditable:YES];
+    } else {
+        [txtAppFrom setEditable:NO];
+        [txtAppTo setEditable:NO];
     }
 }
 

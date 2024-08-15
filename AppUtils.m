@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2005-2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -57,5 +57,15 @@
 
     return ([[dict objectForKey:@"CFBundleVersion"] floatValue] >= 1.2);
 }
+
+#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_4
++ (BOOL)isTigerOrHigher
+{
+    if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_3_5) {
+        return YES;
+    }
+    return NO;
+}
+#endif
 
 @end

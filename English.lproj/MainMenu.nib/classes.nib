@@ -4,7 +4,10 @@
             ACTIONS = {
                 launchAppleGlot = id; 
                 openAppleGlotEnv = id; 
+                runFinalPass = id; 
                 runIncrementalPass = id; 
+                runInitialPass = id; 
+                showAppleGlotConsole = id; 
                 showPreferences = id; 
             }; 
             CLASS = AppController; 

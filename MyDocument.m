@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2005-2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -148,7 +148,7 @@
     }
 }
 
-- (void)translateAllWithGlossary:(NSString *)path
+- (void)translateAllWithGlossary:(NSString *)path replace:(BOOL)replace from:(NSString *)from to:(NSString *)to
 {
     int i, n;
     BOOL rc;
@@ -169,8 +169,15 @@
     dictDs = [dict dataset];
     for (i=0; i<[selfDs numberOfLocalizableItems]; i++) {
         for (n=0; n<[dictDs numberOfLocalizableItems]; n++) {
-            if ([[selfDs baseAtIndex:i] isEqualToString:[dictDs baseAtIndex:n]]) {
-                [selfDs replaceTranAtIndex:[dictDs tranAtIndex:n] index:i];
+            NSMutableString *dictBase = [NSMutableString stringWithString:[dictDs baseAtIndex:n]];
+            NSMutableString *dictTran = [NSMutableString stringWithString:[dictDs tranAtIndex:n]];
+            // replace app name
+            if (replace == YES && [from length] > 0 && [to length] > 0) {
+                [dictBase replaceOccurrencesOfString:from withString:to options:NSLiteralSearch range:NSMakeRange(0, [dictBase length])];
+                [dictTran replaceOccurrencesOfString:from withString:to options:NSLiteralSearch range:NSMakeRange(0, [dictTran length])];
+            }
+            if ([[selfDs baseAtIndex:i] isEqualToString:dictBase]) {
+                [selfDs replaceTranAtIndex:dictTran index:i];
 				updated++;
                 break;
             }

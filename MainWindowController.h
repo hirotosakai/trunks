@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2005-2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -24,14 +24,12 @@
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
 #import "MyDocument.h"
-#import "TrunksPrefs.h"
 #import "TrunksMenuItemTag.h"
 #import "GlossaryDataset.h"
 #import "FindController.h"
 
 @interface MainWindowController : NSWindowController {
     // window
-    IBOutlet id window;
     IBOutlet id tab;
     IBOutlet id table;
     IBOutlet id popFilepath;
@@ -48,6 +46,11 @@
     // for preview
     IBOutlet id webView;
     BOOL HTMLloaded;
+	// custom view of open dialog in the Translate with Glossary
+    IBOutlet id replaceAppView;
+    IBOutlet id chkReplaceApp;
+    IBOutlet id txtAppFrom;
+    IBOutlet id txtAppTo;
 }
 
 // Reload... menu
@@ -96,4 +99,5 @@
 - (IBAction)trAllCancelClicked:(id)sender;
 // Translate with glossary... menu
 - (IBAction)translateWithGlossary:(id)sender;
+- (IBAction)replaceAppChanged:(id)sender;
 @end

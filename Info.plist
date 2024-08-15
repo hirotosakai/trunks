@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>wg</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>WGfile</string>
+			<key>CFBundleTypeName</key>
+			<string>AppleGlot3 WG File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ad</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>ADfile</string>
+			<key>CFBundleTypeName</key>
+			<string>AppleGlot3 AD File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>lg</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>LGfile</string>
+			<key>CFBundleTypeName</key>
+			<string>AppleGlot3 LG File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>Trunks</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Trunks 1.4,1, Copyright © 2005-2006 Hiroto Sakai</string>
+	<key>CFBundleIconFile</key>
+	<string>Trunks</string>
+	<key>CFBundleIdentifier</key>
+	<string>jp.gr.fan.sakai.Trunks</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Trunks</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.4</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.4.1</string>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>

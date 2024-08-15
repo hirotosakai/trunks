@@ -33,5 +33,9 @@
 + (BOOL)isWebKitAvailable;
 // Testing for System Events Availability
 + (BOOL)isSystemEventsAvailable;
+#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_4
+// Testing for Mac OS X version
++ (BOOL)isTigerOrHigher;
+#endif
 
 @end

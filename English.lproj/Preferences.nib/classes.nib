@@ -5,7 +5,7 @@
             ACTIONS = {chooseClicked = id; }; 
             CLASS = PrefController; 
             LANGUAGE = ObjC; 
-            OUTLETS = {txtAppleGlotEnvPath = id; }; 
+            OUTLETS = {prefsController = NSUserDefaultsController; }; 
             SUPERCLASS = NSWindowController; 
         }
     ); 

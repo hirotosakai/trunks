@@ -34,7 +34,7 @@
 }
 
 - (GlossaryDataset *)dataset;
-- (void)translateAllWithGlossary:(NSString *)path;
+- (void)translateAllWithGlossary:(NSString *)path replace:(BOOL)replace from:(NSString *)from to:(NSString *)to;
 - (void)translateAllWithWord:(NSString *)from to:(NSString *)to;
 - (BOOL)writeToXMLFile:(NSString *)oPath;
 - (BOOL)isModifiedByOthers;

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -21,12 +21,32 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
+#import "AMShellWrapper.h"
+#import "MainWindowController.h"
 
-@interface TrunksPrefs : NSObject {
+#define AppleGlotStartedNotification    @"AppleGlotStartedNotification"
+#define AppleGlotFinishedNotification   @"AppleGlotFinishedNotification"
+
+@interface AppleGlotController : NSObject <AMShellWrapperController>
+{
+    IBOutlet NSProgressIndicator *indicator;
+    IBOutlet NSTextField *statusLabel;
+    IBOutlet NSTextView *textview;
+    IBOutlet NSPanel *panel;
+
+    AMShellWrapper *jobController;
+    NSMutableString *itemName;
+    NSModalSession session;
+    BOOL isAppleGlotRunning;
+    BOOL isPanelOpenedByUser;
 }
 
-+ (NSString *)appleGlotEnvPath;
-+ (void)setAppleGlotEnvPath:(NSString *)path;
++ (BOOL)isAppleGlotAvailable;
++ (AppleGlotController *)sharedInstance;
+- (void)runInitialPass:(MainWindowController *)procItem;
+- (void)runIncrementalPass:(MainWindowController *)procItem;
+- (void)runFinalPass:(MainWindowController *)procItem;
+- (void)showConsole;
 
 @end

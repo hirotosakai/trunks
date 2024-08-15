@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2005-2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -152,6 +152,7 @@
 	// update GUI
 	[self clearTextFields];
 	[self resetTableView];
+    [self clickColumnHeader:@"no" sortAscending:YES];
 }
 
 - (IBAction)popFilepathSelected:(id)sender

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Hiroto Sakai
+ * Copyright (c) 2005-2006 Hiroto Sakai
  * 
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -22,13 +22,10 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "AppUtils.h"
-#import "PrefsController.h"
-#import "TrunksPrefs.h"
-#import "TrunksMenuItemTag.h"
 
 @interface AppController : NSObject
 {
+    BOOL isAppleGlotRunning;
 }
 
 // Preferences... menu
@@ -37,7 +34,13 @@
 - (IBAction)openAppleGlotEnv:(id)sender;
 // Launch AppleGlot menu
 - (IBAction)launchAppleGlot:(id)sender;
+// Run Initial Pass menu
+- (IBAction)runInitialPass:(id)sender;
 // Run Incremental Pass menu
 - (IBAction)runIncrementalPass:(id)sender;
+// Run Final Pass menu
+- (IBAction)runFinalPass:(id)sender;
+// Show AppleGlot Console menu
+- (IBAction)showAppleGlotConsole:(id)sender;
 
 @end
