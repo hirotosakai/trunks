@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		2A37F4C6FDCFA73011CA2CEA /* Trunks */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 689205D00859DFA40070AC05 /* Build configuration list for PBXApplicationTarget "Trunks" */;
+			buildPhases = (
+				2A37F4C7FDCFA73011CA2CEA /* Headers */,
+				2A37F4C9FDCFA73011CA2CEA /* Resources */,
+				2A37F4CEFDCFA73011CA2CEA /* Sources */,
+				2A37F4D1FDCFA73011CA2CEA /* Frameworks */,
+			);
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_VERSION = 3.3;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lexpat";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = Trunks_Prefix.h;
+				PRODUCT_NAME = Trunks;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			name = Trunks;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ADedit;
+			productReference = 1758732AFF379DA111CA2CBB /* Trunks.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>wg</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>WGfile</string>
+			<key>CFBundleTypeName</key>
+			<string>AppleGlot3 WG File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ad</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>ADfile</string>
+			<key>CFBundleTypeName</key>
+			<string>AppleGlot3 AD File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>lg</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>LGfile</string>
+			<key>CFBundleTypeName</key>
+			<string>AppleGlot3 LG File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>Trunks</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Trunks 1.2, Copyright (c) 2005 Hiroto Sakai</string>
+	<key>CFBundleIconFile</key>
+	<string>Trunks</string>
+	<key>CFBundleIdentifier</key>
+	<string>jp.gr.fan.sakai.Trunks</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Trunks</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.2</string>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96D9FE201CDB7F000001 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		080E96DAFE201CDB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		080E96DBFE201CDB7F000001 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
+		089C1661FE840EACC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		1058C7A9FEA54F5311CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		2A37F4C8FDCFA73011CA2CEA /* MyDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */; };
+		2A37F4CFFDCFA73011CA2CEA /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
+		2A37F4D0FDCFA73011CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		32DBCF760370BD2300C91783 /* Trunks_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF750370BD2300C91783 /* Trunks_Prefix.h */; };
+		6805A44A081A3602009914C9 /* GlossaryDatasetSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 6805A448081A3602009914C9 /* GlossaryDatasetSort.m */; };
+		6805A450081A68FD009914C9 /* FindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6805A44E081A68FD009914C9 /* FindController.m */; };
+		6805A451081A68FD009914C9 /* FindController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6805A44F081A68FD009914C9 /* FindController.h */; };
+		6805A455081A83E9009914C9 /* FindPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 6805A454081A83E9009914C9 /* FindPanel.nib */; };
+		6805A456081A9E79009914C9 /* GlossaryDataset.m in Sources */ = {isa = PBXBuildFile; fileRef = 685A2A1207F46158007144C8 /* GlossaryDataset.m */; };
+		6813A2AB081BB0370075F088 /* doAGIncrementalPass.applescript in Resources */ = {isa = PBXBuildFile; fileRef = 6813A2AA081BB0370075F088 /* doAGIncrementalPass.applescript */; };
+		68191B940825C43A007B7AB1 /* TrunksMenuItemTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 68191B930825C43A007B7AB1 /* TrunksMenuItemTag.h */; };
+		6832736F08517DBE00DA94A2 /* MainWindowControllerForTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6832736D08517DBE00DA94A2 /* MainWindowControllerForTableView.m */; };
+		683274F008518ED800DA94A2 /* MainWindowControllerForPrinting.m in Sources */ = {isa = PBXBuildFile; fileRef = 683274EE08518ED800DA94A2 /* MainWindowControllerForPrinting.m */; };
+		6832A131077EA20C00F78086 /* ExpatWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6832A12F077EA20C00F78086 /* ExpatWrapper.m */; };
+		6832A132077EA20C00F78086 /* ExpatWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6832A130077EA20C00F78086 /* ExpatWrapper.h */; };
+		6832A135077EA77100F78086 /* GlossaryParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6832A133077EA77100F78086 /* GlossaryParser.h */; };
+		6832A136077EA77100F78086 /* GlossaryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6832A134077EA77100F78086 /* GlossaryParser.m */; };
+		6836750E08122AC600723861 /* GlossaryDatasetOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 6836750C08122AC600723861 /* GlossaryDatasetOutput.m */; };
+		684B255D077EECEB00CB0FA0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 684B255C077EECEB00CB0FA0 /* Localizable.strings */; };
+		684B25A3077EF21C00CB0FA0 /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 684B25A1077EF21C00CB0FA0 /* AppController.h */; };
+		684B25A4077EF21C00CB0FA0 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B25A2077EF21C00CB0FA0 /* AppController.m */; };
+		684E928307C8C52D004AE9C0 /* AppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 684E928107C8C52D004AE9C0 /* AppUtils.h */; };
+		684E928407C8C52D004AE9C0 /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 684E928207C8C52D004AE9C0 /* AppUtils.m */; };
+		6857488F085A97DE006D840D /* MainWindowControllerForFinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6857488E085A97DE006D840D /* MainWindowControllerForFinding.m */; };
+		685748C9085A9958006D840D /* MainWindowControllerForTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = 685748C8085A9958006D840D /* MainWindowControllerForTranslation.m */; };
+		685A2A1307F46158007144C8 /* GlossaryDataset.h in Headers */ = {isa = PBXBuildFile; fileRef = 685A2A1107F46158007144C8 /* GlossaryDataset.h */; };
+		688134BA07C72D0E001C8F59 /* Printing.css in Resources */ = {isa = PBXBuildFile; fileRef = 688134B907C72D0E001C8F59 /* Printing.css */; };
+		688134BF07C783F4001C8F59 /* MainWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 688134BD07C783F4001C8F59 /* MainWindowController.h */; };
+		688134C007C783F4001C8F59 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688134BE07C783F4001C8F59 /* MainWindowController.m */; };
+		6882E7CA081B7A1C00E99A04 /* GlossaryDatasetFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882E7C9081B7A1C00E99A04 /* GlossaryDatasetFind.m */; };
+		68AB3B5507D1BA36008A0668 /* WGfile.icns in Resources */ = {isa = PBXBuildFile; fileRef = 68AB3B5107D1BA36008A0668 /* WGfile.icns */; };
+		68AB3B5707D1BA36008A0668 /* LGfile.icns in Resources */ = {isa = PBXBuildFile; fileRef = 68AB3B5307D1BA36008A0668 /* LGfile.icns */; };
+		68AB3B5807D1BA36008A0668 /* ADfile.icns in Resources */ = {isa = PBXBuildFile; fileRef = 68AB3B5407D1BA36008A0668 /* ADfile.icns */; };
+		68B66CBC07D0658A00EF16D0 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 68B66CBA07D0658A00EF16D0 /* Preferences.nib */; };
+		68B66CBF07D065E500EF16D0 /* PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B66CBD07D065E500EF16D0 /* PrefsController.m */; };
+		68B66CC007D065E500EF16D0 /* PrefsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B66CBE07D065E500EF16D0 /* PrefsController.h */; };
+		68D87CBE07EDC37500E317D1 /* TrunksPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D87CBC07EDC37500E317D1 /* TrunksPrefs.h */; };
+		68D87CBF07EDC37500E317D1 /* TrunksPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D87CBD07EDC37500E317D1 /* TrunksPrefs.m */; };
+		68FCE7FE07F5059A0018C42E /* Trunks.icns in Resources */ = {isa = PBXBuildFile; fileRef = 68FCE7FD07F5059A0018C42E /* Trunks.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4A9504D0FFE6A4CB11CA0CBA /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-g -O0";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4A9504D1FFE6A4CB11CA0CBA /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OPTIMIZATION_CFLAGS = "-O2";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1758732AFF379DA111CA2CBB /* Trunks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Trunks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDocument.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* Trunks_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trunks_Prefix.h; sourceTree = "<group>"; };
+		6805A448081A3602009914C9 /* GlossaryDatasetSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryDatasetSort.m; sourceTree = "<group>"; };
+		6805A44C081A608C009914C9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/FindPanel.nib; sourceTree = "<group>"; };
+		6805A44E081A68FD009914C9 /* FindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindController.m; sourceTree = "<group>"; };
+		6805A44F081A68FD009914C9 /* FindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindController.h; sourceTree = "<group>"; };
+		6813A2AA081BB0370075F088 /* doAGIncrementalPass.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = doAGIncrementalPass.applescript; sourceTree = "<group>"; };
+		68191B930825C43A007B7AB1 /* TrunksMenuItemTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrunksMenuItemTag.h; sourceTree = "<group>"; };
+		6832736D08517DBE00DA94A2 /* MainWindowControllerForTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowControllerForTableView.m; sourceTree = "<group>"; };
+		683274EE08518ED800DA94A2 /* MainWindowControllerForPrinting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowControllerForPrinting.m; sourceTree = "<group>"; };
+		6832A12F077EA20C00F78086 /* ExpatWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpatWrapper.m; sourceTree = "<group>"; };
+		6832A130077EA20C00F78086 /* ExpatWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpatWrapper.h; sourceTree = "<group>"; };
+		6832A133077EA77100F78086 /* GlossaryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryParser.h; sourceTree = "<group>"; };
+		6832A134077EA77100F78086 /* GlossaryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryParser.m; sourceTree = "<group>"; };
+		6836750C08122AC600723861 /* GlossaryDatasetOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryDatasetOutput.m; sourceTree = "<group>"; };
+		6842ABA80785BB02002509DF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		684B255A077EECE400CB0FA0 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		684B25A1077EF21C00CB0FA0 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		684B25A2077EF21C00CB0FA0 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		684E928107C8C52D004AE9C0 /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		684E928207C8C52D004AE9C0 /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		6857488E085A97DE006D840D /* MainWindowControllerForFinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowControllerForFinding.m; sourceTree = "<group>"; };
+		685748C8085A9958006D840D /* MainWindowControllerForTranslation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowControllerForTranslation.m; sourceTree = "<group>"; };
+		685A2A1107F46158007144C8 /* GlossaryDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryDataset.h; sourceTree = "<group>"; };
+		685A2A1207F46158007144C8 /* GlossaryDataset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryDataset.m; sourceTree = "<group>"; };
+		688134B907C72D0E001C8F59 /* Printing.css */ = {isa = PBXFileReference; lastKnownFileType = text; path = Printing.css; sourceTree = "<group>"; };
+		688134BD07C783F4001C8F59 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		688134BE07C783F4001C8F59 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		6882E7C9081B7A1C00E99A04 /* GlossaryDatasetFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryDatasetFind.m; sourceTree = "<group>"; };
+		68AB3B5107D1BA36008A0668 /* WGfile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WGfile.icns; sourceTree = "<group>"; };
+		68AB3B5307D1BA36008A0668 /* LGfile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = LGfile.icns; sourceTree = "<group>"; };
+		68AB3B5407D1BA36008A0668 /* ADfile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ADfile.icns; sourceTree = "<group>"; };
+		68B66CBB07D0658A00EF16D0 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		68B66CBD07D065E500EF16D0 /* PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsController.m; sourceTree = "<group>"; };
+		68B66CBE07D065E500EF16D0 /* PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsController.h; sourceTree = "<group>"; };
+		68D87CBC07EDC37500E317D1 /* TrunksPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrunksPrefs.h; sourceTree = "<group>"; };
+		68D87CBD07EDC37500E317D1 /* TrunksPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrunksPrefs.m; sourceTree = "<group>"; };
+		68FCE7FD07F5059A0018C42E /* Trunks.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Trunks.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A37F4D1FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A9FEA54F5311CA2CBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				6842ABA80785BB02002509DF /* WebKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1758732AFF379DA111CA2CBB /* Trunks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* ADedit */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				68AB3B5907D1BAFD008A0668 /* Other Files */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = ADedit;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
+				688134BD07C783F4001C8F59 /* MainWindowController.h */,
+				688134BE07C783F4001C8F59 /* MainWindowController.m */,
+				6832736D08517DBE00DA94A2 /* MainWindowControllerForTableView.m */,
+				683274EE08518ED800DA94A2 /* MainWindowControllerForPrinting.m */,
+				6857488E085A97DE006D840D /* MainWindowControllerForFinding.m */,
+				685748C8085A9958006D840D /* MainWindowControllerForTranslation.m */,
+				684B25A1077EF21C00CB0FA0 /* AppController.h */,
+				684B25A2077EF21C00CB0FA0 /* AppController.m */,
+				6832A130077EA20C00F78086 /* ExpatWrapper.h */,
+				6832A12F077EA20C00F78086 /* ExpatWrapper.m */,
+				6832A133077EA77100F78086 /* GlossaryParser.h */,
+				6832A134077EA77100F78086 /* GlossaryParser.m */,
+				685A2A1107F46158007144C8 /* GlossaryDataset.h */,
+				685A2A1207F46158007144C8 /* GlossaryDataset.m */,
+				6836750C08122AC600723861 /* GlossaryDatasetOutput.m */,
+				6805A448081A3602009914C9 /* GlossaryDatasetSort.m */,
+				6882E7C9081B7A1C00E99A04 /* GlossaryDatasetFind.m */,
+				68B66CBE07D065E500EF16D0 /* PrefsController.h */,
+				68B66CBD07D065E500EF16D0 /* PrefsController.m */,
+				68191B930825C43A007B7AB1 /* TrunksMenuItemTag.h */,
+				68D87CBC07EDC37500E317D1 /* TrunksPrefs.h */,
+				68D87CBD07EDC37500E317D1 /* TrunksPrefs.m */,
+				6805A44F081A68FD009914C9 /* FindController.h */,
+				6805A44E081A68FD009914C9 /* FindController.m */,
+				684E928107C8C52D004AE9C0 /* AppUtils.h */,
+				684E928207C8C52D004AE9C0 /* AppUtils.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* Trunks_Prefix.h */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */,
+				68B66CBA07D0658A00EF16D0 /* Preferences.nib */,
+				6805A454081A83E9009914C9 /* FindPanel.nib */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				684B255C077EECEB00CB0FA0 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68AB3B5907D1BAFD008A0668 /* Other Files */ = {
+			isa = PBXGroup;
+			children = (
+				6813A2AA081BB0370075F088 /* doAGIncrementalPass.applescript */,
+				688134B907C72D0E001C8F59 /* Printing.css */,
+				68FCE7FD07F5059A0018C42E /* Trunks.icns */,
+				68AB3B5407D1BA36008A0668 /* ADfile.icns */,
+				68AB3B5307D1BA36008A0668 /* LGfile.icns */,
+				68AB3B5107D1BA36008A0668 /* WGfile.icns */,
+			);
+			name = "Other Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A37F4C7FDCFA73011CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DBCF760370BD2300C91783 /* Trunks_Prefix.h in Headers */,
+				2A37F4C8FDCFA73011CA2CEA /* MyDocument.h in Headers */,
+				688134BF07C783F4001C8F59 /* MainWindowController.h in Headers */,
+				684B25A3077EF21C00CB0FA0 /* AppController.h in Headers */,
+				6832A132077EA20C00F78086 /* ExpatWrapper.h in Headers */,
+				685A2A1307F46158007144C8 /* GlossaryDataset.h in Headers */,
+				6832A135077EA77100F78086 /* GlossaryParser.h in Headers */,
+				68D87CBE07EDC37500E317D1 /* TrunksPrefs.h in Headers */,
+				68B66CC007D065E500EF16D0 /* PrefsController.h in Headers */,
+				684E928307C8C52D004AE9C0 /* AppUtils.h in Headers */,
+				6805A451081A68FD009914C9 /* FindController.h in Headers */,
+				68191B940825C43A007B7AB1 /* TrunksMenuItemTag.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 689205D40859DFA40070AC05 /* Build configuration list for PBXProject "Trunks" */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			buildStyles = (
+				4A9504D0FFE6A4CB11CA0CBA /* Development */,
+				4A9504D1FFE6A4CB11CA0CBA /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* ADedit */;
+			projectDirPath = "";
+			targets = (
+				2A37F4C6FDCFA73011CA2CEA /* Trunks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A37F4C9FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96D9FE201CDB7F000001 /* Credits.rtf in Resources */,
+				080E96DAFE201CDB7F000001 /* MainMenu.nib in Resources */,
+				080E96DBFE201CDB7F000001 /* MyDocument.nib in Resources */,
+				68B66CBC07D0658A00EF16D0 /* Preferences.nib in Resources */,
+				089C1661FE840EACC02AAC07 /* InfoPlist.strings in Resources */,
+				684B255D077EECEB00CB0FA0 /* Localizable.strings in Resources */,
+				688134BA07C72D0E001C8F59 /* Printing.css in Resources */,
+				68AB3B5507D1BA36008A0668 /* WGfile.icns in Resources */,
+				68AB3B5707D1BA36008A0668 /* LGfile.icns in Resources */,
+				68AB3B5807D1BA36008A0668 /* ADfile.icns in Resources */,
+				68FCE7FE07F5059A0018C42E /* Trunks.icns in Resources */,
+				6805A455081A83E9009914C9 /* FindPanel.nib in Resources */,
+				6813A2AB081BB0370075F088 /* doAGIncrementalPass.applescript in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A37F4CEFDCFA73011CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A37F4D0FDCFA73011CA2CEA /* main.m in Sources */,
+				2A37F4CFFDCFA73011CA2CEA /* MyDocument.m in Sources */,
+				688134C007C783F4001C8F59 /* MainWindowController.m in Sources */,
+				6832736F08517DBE00DA94A2 /* MainWindowControllerForTableView.m in Sources */,
+				683274F008518ED800DA94A2 /* MainWindowControllerForPrinting.m in Sources */,
+				6857488F085A97DE006D840D /* MainWindowControllerForFinding.m in Sources */,
+				685748C9085A9958006D840D /* MainWindowControllerForTranslation.m in Sources */,
+				684B25A4077EF21C00CB0FA0 /* AppController.m in Sources */,
+				6832A131077EA20C00F78086 /* ExpatWrapper.m in Sources */,
+				6832A136077EA77100F78086 /* GlossaryParser.m in Sources */,
+				6805A456081A9E79009914C9 /* GlossaryDataset.m in Sources */,
+				6836750E08122AC600723861 /* GlossaryDatasetOutput.m in Sources */,
+				6805A44A081A3602009914C9 /* GlossaryDatasetSort.m in Sources */,
+				6882E7CA081B7A1C00E99A04 /* GlossaryDatasetFind.m in Sources */,
+				68B66CBF07D065E500EF16D0 /* PrefsController.m in Sources */,
+				68D87CBF07EDC37500E317D1 /* TrunksPrefs.m in Sources */,
+				6805A450081A68FD009914C9 /* FindController.m in Sources */,
+				684E928407C8C52D004AE9C0 /* AppUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = MyDocument.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6805A454081A83E9009914C9 /* FindPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6805A44C081A608C009914C9 /* English */,
+			);
+			name = FindPanel.nib;
+			sourceTree = "<group>";
+		};
+		684B255C077EECEB00CB0FA0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				684B255A077EECE400CB0FA0 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		68B66CBA07D0658A00EF16D0 /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B66CBB07D0658A00EF16D0 /* English */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		689205D10859DFA40070AC05 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = 3.3;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-g -O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lexpat";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = Trunks_Prefix.h;
+				PRODUCT_NAME = Trunks;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		689205D20859DFA40070AC05 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = 3.3;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O2";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lexpat";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = Trunks_Prefix.h;
+				PRODUCT_NAME = Trunks;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		689205D30859DFA40070AC05 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_VERSION = 3.3;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lexpat";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = Trunks_Prefix.h;
+				PRODUCT_NAME = Trunks;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		689205D50859DFA40070AC05 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Development;
+		};
+		689205D60859DFA40070AC05 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Deployment;
+		};
+		689205D70859DFA40070AC05 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		689205D00859DFA40070AC05 /* Build configuration list for PBXApplicationTarget "Trunks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689205D10859DFA40070AC05 /* Development */,
+				689205D20859DFA40070AC05 /* Deployment */,
+				689205D30859DFA40070AC05 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		689205D40859DFA40070AC05 /* Build configuration list for PBXProject "Trunks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689205D50859DFA40070AC05 /* Development */,
+				689205D60859DFA40070AC05 /* Deployment */,
+				689205D70859DFA40070AC05 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

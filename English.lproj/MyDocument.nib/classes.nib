@@ -1,0 +1,46 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                popFilepathSelected = id; 
+                previewClicked = id; 
+                trAllCancelClicked = id; 
+                trAllOKClicked = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                btnTrAllOK = id; 
+                popFilepath = id; 
+                tab = id; 
+                table = id; 
+                txtBase = id; 
+                txtDescription = id; 
+                txtOrigin = id; 
+                txtPosition = id; 
+                txtTrAllFrom = id; 
+                txtTrAllTo = id; 
+                txtTran = id; 
+                webView = id; 
+                winTrAll = id; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {
+                goBack = id; 
+                goForward = id; 
+                makeTextLarger = id; 
+                makeTextSmaller = id; 
+                reload = id; 
+                stopLoading = id; 
+                takeStringURLFrom = id; 
+            }; 
+            CLASS = WebView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

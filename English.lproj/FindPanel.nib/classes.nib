@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {nextClicked = id; prevClicked = id; }; 
+            CLASS = FindController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                btnNext = id; 
+                btnPrev = id; 
+                chkCase = id; 
+                chkWrap = id; 
+                tglScope = id; 
+                txtFind = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

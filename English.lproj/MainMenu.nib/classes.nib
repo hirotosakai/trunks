@@ -1,0 +1,30 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                launchAppleGlot = id; 
+                openAppleGlotEnv = id; 
+                runIncrementalPass = id; 
+                showPreferences = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                copyOrigToTran = id; 
+                findNext = id; 
+                findPrev = id; 
+                reloadDocument = id; 
+                showFindWindow = id; 
+                translateAll = id; 
+                translateWithGlossary = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
